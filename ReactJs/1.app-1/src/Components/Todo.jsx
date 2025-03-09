@@ -27,7 +27,7 @@ const Todo = () => {
         {textList.map((text, index) => (
           <li key={index}>
             {text}
-            <button onClick={() => handleDelete(index)}>X</button>
+            <button onClick={() => handleDelete(index)} style={{color:"red"}}>X</button>
           </li>
         ))}
       </ul>
